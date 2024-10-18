@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>Технология Blockchain</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
@@ -9,30 +9,83 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+        .slide::after{
+            display: none;
+        }
+        body{
+            background-image: url("pictures/phon_4.jpg");
+            background-size: cover;
+        }
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1 style="color:white;">Технология <br/> Blockchain</h1>
+        <p style="color:white; font-size: 40px;">Теплухин Рустам, ИУ3-32М,<br/>МГТУ имени Н. Э. Баумана</p>
     </header>
+    
 
     <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="https://pepelsbey.net">Vadim Makeev</a></p>
+        <h2 style = "margin: 20% 0%">Технология Blockhain</h2>
+        <p  style = "margin: -15% 0%">Подготовил студент группы ИУ3-32М <a href="https://vk.com/rtepl">Теплухин Рустам Геннадьевич</a></p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
+	        <img class="cover" src="pictures/Slide_1.jpg" alt="Hands on the orange typewriter in a park">
         </figure>
         <style>
             #cover h2 {
-                margin: 30px 0 0;
+                margin: 15px 0 0;
                 color: white;
                 text-align: center;
                 font-size: 70px;
+            }
+
+            #cover_1 h2 {
+                margin: 1% 0 0;
+                color: white;
+                text-align: left;
+                font-size: 50px;
+            }
+
+            #cover_1 li {
+                margin: 1% 0 0;
+                color: white;
+                text-align: left;
+                font-size: 30px;
+            }
+            #cover_2 th {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 25px;
+            }
+            #cover_2 td {
+                margin: 5% 0 0;
+                color: white;
+                text-align: center;
+                font-size: 18px;
+            }
+            #cover_2 tr {
+                border-bottom: 1px solid #ddd;
+            }
+            #cover_2 table {
+                
+                border-collapse: collapse;
+                margin: 3% -12%
+            }
+
+            #cover_2 h2 {
+                margin: 1% 0 0;
+                color: white;
+                text-align: left;
+                font-size: 50px;
+            }
+
+            #cover_2 li {
+                margin: 2% 0 0;
+                color: white;
+                text-align: left;
+                font-size: 20px;
             }
 
             #cover p {
@@ -42,169 +95,398 @@
                 font-style: italic;
                 font-size: 20px;
             }
+            #cover_1 ul li::before {
+                content: '•'; /* Символ точки */
+                color: white; /* Цвет точки */
+                margin-right: 10px;
+            }
 
+            #cover_2 ul li::before {
+                content: '•'; /* Символ точки */
+                color: white; /* Цвет точки */
+                margin-right: 10px;
+            }
+            #cover_1 ul li::before {
+                content: '•'; /* Символ точки */
+                color: white; /* Цвет точки */
+                margin-right: 10px;
+            }
             #cover p a {
                 color: white;
             }
+
+        
+                       
+            #cover_3 h2 {
+                margin: 1% 0 0;
+                color: white;
+                text-align: left;
+                font-size: 50px;
+            }
+            #cover_3 th {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 25px;
+            }
+            #cover_3 td {
+                margin: 5% 0 0;
+                color: white;
+                text-align: center;
+                font-size: 25px;
+            }
+            #cover_3 table {
+                
+                margin: 0% -18%;
+                width: 133%;
+            }
         </style>
     </section>
 
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>All kind of lists</h2>
-        <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
-                <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
-                </ul>
-            </li>
-            <li>Look, seven rows exactly!</li>
-        </ol>
-    </section>
-
-    <section class="slide">
-        <h2>Serious citations</h2>
+    <section class="slide" id="cover_1">
+        
         <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg">
         </figure>
+       
+        <h2>План</h2>
+        
+
+        <ul>
+            <li>Актуальность, история и основные понятия Blockchain.</li>
+            <li>Описание структуры и механизма функционирования.</li>
+            <li>Преимущества и недостатки технологии.</li>
+            <li>Классификация Blockchain.</li>
+            <li>Области применения и ключевые игроки.</li>
+                
+        </ul>
+        
+        
     </section>
 
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
+    <section class="slide" id="cover_1">
+        
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="right"  src="pictures/Img_slide_3.png" style="vertical-align:middle;margin:100px 0px" >
+        </figure>
+       
+        <h2>Актуальность</h2>        
+
+        <ul>
+            <li>Децентрализованное управление.</li>
+            <li>Неизменяемость данных.</li>
+            <li>Прозрачность и доверие.</li>
+            <li>Экономия денежных средств.</li>
+               
+                
+        </ul>
+        
+        
     </section>
 
-    <section class="slide">
-        <h2>Even tables</h2>
+    
+
+
+    <section class="slide" id="cover_2">
+        <h2>Сравнение Blockchain и СУБД</h2>
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" alt="Hands on the orange typewriter in a park">
+        </figure>
         <table>
         <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
+            <th scope="col"></th>
+            <th>Базы данных</th>
+            <th>Гибридный</th>
+            <th>Публичный</th>
         </tr>
         <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
+            <th scope="row">Тип</th>
+            <td>Разрешенный</td>
+            <td>Разрешенный</td>
+            <td>Публичный</td>
         </tr>
         <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
+            <th scope="row">Контроль</th>
+            <td>Централизованный</td>
+            <td>Частично централизованный</td>
+            <td>Децентрализованный</td>
         </tr>
         <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
+            <th scope="row">Архитектура</th>
+            <td>Клиент-сервер</td>
+            <td>Закрытая пиринговая</td>
+            <td>Публичная пиринговая</td>
         </tr>
         <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
+            <th scope="row">Постоянство данных</th>
+            <td>Непостоянное</td>
+            <td>Неизменное</td>
+            <td>Неизменное</td>
+        </tr>
+        <tr>
+            <th scope="row">Вероятность сбоев</th>
+            <td>Да</td>
+            <td>Нет</td>
+            <td>Нет</td>
+        </tr>
+        <tr>
+            <th scope="row">Производительность</th>
+            <td>Быстрая</td>
+            <td>Медленная-средняя</td>
+            <td>Медленная</td>
         </tr>
         </table>
-        <p>It’s good to have information organized.</p>
+        <footer style="position: absolute; bottom: 0; width: 100%; text-align: center; padding: 10px; background-color: #f1f1f1;">
+            Теплухин Рустам Геннадьевич, ИУ3-32М, teprust@mail.ru, Вариант 1
+        </footer>
     </section>
 
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
+    <section class="slide" id="cover_2">
+        
         <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="https://fiftyfootshadows.net">© John Carey</a>
-            </figcaption>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg">
         </figure>
-        <style>
-            #picture h2 {
-                color: white;
-            }
-        </style>
+       
+        <h2>История</h2>
+        
+
+        <ul>
+            <li>1982 год, David Lee Chaum, «Компьютерные системы, созданные, поддерживаемые и пользующиеся доверием взаимно подозрительных групп». </li>
+            <li>1991 год, W. Scott Stornetta и Stuart Haber, статья «How to Time-Stamp a Digital Document».</li>
+            <li>1992 год, добавление хэш-деревьев.</li>
+            <li>2004 год, Harold Thomas Finney II, система Reusable Proof of Work (RPoW).</li>
+            <li>2008 год, Satoshi Nakamoto, письмо «Bitcoin P2P e-cash paper».</li>                
+        </ul>
+        
+        
     </section>
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
+    <section class="slide" id="cover_3">
+        
+        <h2>Ключевые компоненты Blockchain</h2>    
+        <table>
+            <tr>
+                <th scope="row"></th>
+                <td>Распределенный реестр</td>
+                <td>Смарт-контракты</td>
+                <td>Криптография с открытым</br>ключом</td>
+            </tr>
+        </table>
+        
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="left" src="pictures/Slide_6_1.png" style="vertical-align:middle; margin: 5px 2px; width:30%; height: 30%;" >
+            <img align="middle" src="pictures/Slide_6_2.png" style="vertical-align:middle; margin: 5px 0px; width:35%; height: 35%;" >
+            <img align="right" src="pictures/Slide_6_3.png" style="vertical-align:middle; margin: 5px 0px; width:34%; height: 34%;" >
+        </figure>
+        </br>
+        <p style="color:white;margin: -5% 0%">Блокчейн - это выстроенная по определённым правилам непрерывная последовательная цепочка блоков, содержащих информацию.</p>
+            
     </section>
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
+    <section class="slide" id="cover_1">
+        
+        <h2>Механизм Blockchain</h2>
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="middle"  src="pictures/Blch_meh.jpg" style="vertical-align:middle;margin:0px 0%; width: 100% ;height: 100%;" >
+        </figure>
+       
+                
+        <p style="color:white;">Транзакция – любая операция в blockchain между адресатами. Считается завершённой и достоверной, когда проверены её формат и подписи, когда транзакция объединена в группу и записана в блок.</p>
+        
+    </section>
+
+    <section class="slide" id="cover_1">
+        
+        <h2>Общая структура и организация блоков</h2>
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="middle"  src="pictures/Slide_with_hash.png" style="vertical-align:middle;margin:2% 10%; width: 80% ;height: 80%;" >
+        </figure>
+       
+                
+        <p style="color:white;">Хэш функция – функция, осуществляющая преобразование входных данных произвольной длины в битовую строку установленной длины.
+        </p>
+        
+    </section>
+
+
+    <section class="slide" id="cover_1">
+        
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="right"  src="pictures/Slide_good.png" style="vertical-align:middle;margin:100px 0px" >
+        </figure>
+       
+        <h2>Преимущества Blockchain</h2>        
+
+        <ul style = "margin: 5% 0%">
+            <li>Неизменность внесенных данных.</li>
+            <li>Распределенность среди участников.</li>
+            <li>Децентрализованное управление.</li>
+            <li>Прозрачность данных.</li>              
+        </ul>    
+    </section>
+
+    <section class="slide" id="cover_1">
+        <h2>Консенсус</h2>
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="right"  src="pictures/Consensus.jpg" style="vertical-align:middle;margin:0% -5%; height: 40%; width: 40%;" >
+        </figure>
         <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
+            <li style = "font-size:22px">Функции консенсуса
+                <ul>
+                    <li style = "font-size:19px">Частота генерации новых блоков.</li>
+                    <li style = "font-size:19px">Проверка информации в блоке.</li>
+                    <li style = "font-size:19px">Размер вознаграждения.</li>
+                        
+                </ul>
+            </li>
+            <li style = "font-size:22px">Алгоритмы консенсуса
+                <ul>
+                    <li style = "font-size:19px">Proof-of-Work – доказательство выполнения работы.</li>
+                    <li style = "font-size:19px">Proof-of-Stake – доказательство доли владения.</li>
+                    <li style = "font-size:19px">Proof-of-Importance – доказательство важности.</li>
+                    <li style = "font-size:19px">Proof-of-Activity – доказательство полномочий.</li>
+                        
+                </ul>
+            </li>
+            
         </ol>
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
-
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
-            }
-        </style>
+    <section class="slide" id="cover_1">
+        
+        <h2>Трилемма масштабируемости</h2> 
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="center" position= "down" src="pictures/Slide_with_problem.png" style="vertical-align:middle;margin: 2% 25%; width:50%; height: 50%;" >
+        </figure>
+       
+               
     </section>
 
+    <section class="slide" id="cover_2">
+        
+        <h2>Классификация Blockchain</h2>
+
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg">
+            <img align="right"  src="pictures/class.png" style="vertical-align:middle;margin:100px 0px; height: 25%; width: 25%;" >
+        </figure>
+
+        <p style="color:white; margin: 4% 0%">Публичный blockchain (криптовалюты BTC, ETH)</p>
+        <ul style="margin: -4% 5%">
+            <li style = "font-size:17px">Децентрализованы. </li>   
+            <li style = "font-size:17px">Любой человек может вносить изменения.</li>              
+        </ul>
+        <p style="color:white; margin: 4% 0%">Blockchain консорциума (R3)</p>
+        <ul style="margin: -4% 5%">
+            <li style = "font-size:17px">Частично децентрализованный. </li>  
+            <li style = "font-size:17px">Процесс согласования контролируется избранным набором узлов. </li>  
+            <li style = "font-size:17px">Право на чтение блоков может быть общедоступным. </li>                             
+        </ul>
+        <p style="color:white; margin: 4% 0%">Приватный blockchain (Ripple)</p>
+        <ul style="margin: -4% 5%">
+            <li style = "font-size:17px">Доступ только у избранных узлов.</li>  
+        </ul>       
+    </section>
+
+    <section class="slide" id="cover_1">
+        
+        <h2>Области применения Blockchain</h2> 
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="center" position= "down" src="pictures/Slide_with_jobs.jpg" style="vertical-align:middle;margin: 2% 23%; width:60%; height: 60%;" >
+        </figure>
+       
+               
+    </section>
+
+    <section class="slide" id="cover_1">
+        
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="right"  src="pictures/Map.png" style="vertical-align:middle;margin: 8% 0px; width: 60%; height: 60%;" >
+        </figure>
+       
+        <h2 style = "margin: 2% 0%">Ключевые игроки</h2>        
+
+        <ul>
+            <li style = "font-size:19px; margin: 0% 5%">IBM Corporation; </li>
+            <li style = "font-size:19px; margin: 0% 5%">   Microsoft Corporation; </li>
+            <li style = "font-size:19px; margin: 0% 5%">   Linux Foundation;</li>
+            <li style = "font-size:19px; margin: 0% 5%">   Galaxy Digital Holdings Ltd; </li>
+            <li style = "font-size:19px; margin: 0% 5%">  Chain Inc.; </li>
+            <li style = "font-size:19px; margin: 0% 5%">  Deloitte; </li>
+            <li style = "font-size:19px; margin: 0% 5%">   Circle Internet Financial Limited;</li>
+            <li style = "font-size:19px; margin: 0% 5%">   Global Arena Holding, Inc. (GAHI); </li>
+            <li style = "font-size:19px; margin: 0% 5%">  Ripple; </li>
+            <li style = "font-size:19px; margin: 0% 5%">  Marathon Digital Holdings Inc.</li>
+                          
+        </ul>    
+    </section>
+
+    <section class="slide" id="cover_1">
+        
+        <h2>Blockchain-фреймворки</h2> 
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="center" position= "down" src="pictures/Frameworks.jpg" style="vertical-align:middle;margin: 7% 0%; width:100%; height: 100%;" >
+        </figure>
+       
+               
+    </section>
+
+
+    <section class="slide" id="cover_1">
+        
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img align="right"  src="pictures/Top.png" style="vertical-align:middle;margin:100px 0px; height: 25%; width: 25%;" >
+        </figure>
+       
+        <h2 style = "margin: 2% 0%">Будущее с Blockchain</h2>        
+
+        <ul style = "margin: 0% 5%">
+            <li style = "font-size:22px;">Защита прав собственности.</li>
+            <li style = "font-size:22px;">Защита авторских прав.</li>
+            <li style = "font-size:22px;">Удешевление и ускорение денежных переводов.</li>
+            <li style = "font-size:22px;">Монетизация и защита персональных данных. </li>
+            <li style = "font-size:22px;">Сокращение транзакционных издержек. </li>
+            <li style = "font-size:22px;">Устранение асимметрии информации.</li>
+            <li style = "font-size:22px;">Повышение доверия. </li>                           
+        </ul>    
+    </section>
+
+    <section class="slide" id="cover_1">
+        <h2 style = "margin: 2% 0%">Blockchain-gif</h2>   
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+            <img src="pictures/animation.gif" style="vertical-align:middle;margin: 0% 15% ; height: 70%; width: 70%;" >
+        </figure>
+        <footer style="position: absolute; bottom: 0; width: 100%; text-align: center; padding: 10px; background-color: #f1f1f1;">
+            Теплухин Рустам Геннадьевич, ИУ3-32М, teprust@mail.ru, Вариант 1
+        </footer>
+    </section>
+
+    <section class="slide">
+        <h2 class="shout shrink" style = "color:white">Спасибо за внимание!</h2>
+        <figure>
+	        <img class="cover" src="pictures/Slide_2_and_more.jpg" >
+        </figure>
+    </section>
+
+   
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+        <a href="https://github.com/teprust">My GitHub</a>
     </footer>
 
     <div class="progress"></div>
 
     <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
-
 </body>
 </html>
